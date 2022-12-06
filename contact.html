@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <ul>
+        <li>Email: murtazatinwala1511@gmail.com</li>
+        <li>LinkedIn: </li>
+    </ul>
+    <!--action will tell what to do with the form and mailto: will open
+    the default mail client and will set the To: email as specified in 
+    mailto:. method will tell that we will post the gmail and encoding type tells
+    how to user entered data will be given to the programmer-->  
+    <!--The name of all input types allow how to classify each entered
+    data separately which is very IMP-->
+    <!-- The email input type does some basic validation checks like should
+    contain @, shouldn't contain special symbols and there should be something
+    after @ sign-->
+    <form action="mailto:murtazatinwala1511@gmail.com" method="post" enctype="text/plain">
+        <label>Enter your name:</label><br>
+        <input type="text" name="yourName">
+        <br>
+        <label>Email:</label><br>
+        <input type="email" name="yourEmail" id="">
+        <br>
+        <label>Date of Birth:</label><br>
+        <input type="date" name="yourDob" id="">
+        <br>
+        <!-- <label>Favourite Color</label>
+        <input type="color" name="" id="">
+        <br>
+        <label>Password:</label>
+        <input type="password" name="" id=""> -->
+        <label>Your Message:</label><br>
+        <textarea name="yourMessage" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" name="">
+    </form>
+    <a href="index.html">Go Back To Homepage</a>
+    <!-- anchor tag and href attributes to produce hyperlinks it is blue
+    colored if not clicked anytime and purple if we have clicked it.(Very Informative)-->
+</body>
+</html>

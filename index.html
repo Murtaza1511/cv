@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!--Doctype tells web browser that it is a HTML Document-->
+<!-- If we type ! and hit enter it will give us the boilerplate code
+which is a template of html code which we use every now and then-->
+<html lang="en">
+<head> <!-- Head will have information about the webpage-->
+    <!-- charset is an attribute which tells that which character set will
+    webpage follow to render the contents for eg here utf8 is unicode 
+    which contains almost symbols of every language, emojis etc-->
+    <meta charset="UTF-8"> <!-- meta tag give more information about webpage-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murtaza's Personal Site</title>
+</head>
+<body>
+    <table cellspacing ="20"> <!-- We are placing first img tag in first td and some other
+         statement in 2nd td so it will displayed to right of img-->
+        <tr>
+            <td><img src="https://qph.cf2.quoracdn.net/main-thumb-1175686517-200-ckccbmtxooiixryaqrtxysipzppislin.jpeg" alt="murtaza profile image"></td>
+            <td> <!--We can give image path if it is in same computer or image link but
+                its rendering will depend on the server it is and if the server goes
+                down we won't get the image which is in this case is Quora-->
+                <!--We can round image which looks professional by online site to round image-->
+                <h1>Murtaza Tinwala</h1>
+                <p><em>Student of</em> <strong>Atmiya University</strong></p>
+                <!-- We can also use <i> and <b> instead of <em> and <strong> 
+                but these tags are recommended as <i> and <b> simply styles
+                the content while em gives emphasis and strong gives importance 
+                which we can further read in mdn site-->
+                <p>I am Btech IT student. I love to explore new technologies and 
+                   love to create new things with that technologies.<br>I am currently 
+                   doing DSA and development. I  also ❤️ to teach this technologies. 
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+    <hr size ="3" noshade>
+    <h3>Education </h3>
+    <ul><!--Unordered List and List items-->
+        <li>Primary School Education<strong>:</strong> Saint Paul's School Rajkot</li>
+        <li>Higher Secondary Education<strong>:</strong> Saint Paul's School Rajkot</li>
+        <li>BTech Information Technology<strong>:</strong> Atmiya University</li>
+    </ul>
+    <hr size="3" noshade>
+    <h3>Work Experience</h3>
+    <table cellspacing ="10">
+        <!-- Although we don't need use thead, tbody, tfoot in tables
+        essentially it will give same output without using it also
+        but while styling the table we can style thead and tbody separately
+        we can use some table attributes like border, align, etc but that
+        are deprecated features of html as html is used for structuring and NOT styling -->
+        <!--The main job of table is to display structured data-->
+        <!-- The main disadvantages of table is there are no columns that
+        we can declare we fill rows data and it becomes effective columns-->
+        <thead>
+            <tr> 
+                <th>Dates</th>
+                <th>Work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021-2022</td>
+                <td>IISC Bengaluru English App Internship</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>AICTE Internship</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr size="3" noshade>
+    <h3>Skills</h3>
+    <table cellspacing ="10" >
+        <tr>
+            <td>
+                <table>
+                <tr>
+                    <td>Java</td>
+                    <td>&#11088&#11088&#11088</td>
+                </tr>
+                <tr>
+                    <td>C Language</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                <tr>
+                    <td>Teaching</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td>⭐⭐</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+<!-- This is a nested table and see how complicated it has became and that
+is why html is not used for styling-->
+    <hr size="3" noshade>
+    <!--We can anchor tag for hyperlink of an outside site also(i.e. not in our project folder)-->
+    <a href="hobbies.html"><strong>My Hobbies</strong></a>
+    <br>
+    <a href="contact.html"><strong>Contact me</strong></a>
+</body>
+</html>
